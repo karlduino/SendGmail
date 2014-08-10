@@ -1,9 +1,9 @@
 #!/usr/bin/perl
-# insert private info into PowerSensor.ino
+# insert generic info into TembooAccount.h
 
 $origfile = "TembooAccount.h";
 $tmpfile = "tmp";
-$insertion = "private.txt";
+$insertion = "private.h";
 
 if(-e $tmpfile) { die("tmp file already exists"); }
 system("mv $origfile $tmpfile");

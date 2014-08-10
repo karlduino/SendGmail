@@ -3,7 +3,7 @@
 
 $origfile = "TembooAccount.h";
 $tmpfile = "tmp";
-$insertion = "generic.txt";
+$insertion = "generic.h";
 
 if(-e $tmpfile) { die("tmp file already exists"); }
 system("mv $origfile $tmpfile");
