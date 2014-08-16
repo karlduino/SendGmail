@@ -17,7 +17,6 @@ void setup() {
   Serial.begin(9600);
 
   // for debugging, wait until a serial console is connected
-  delay(4000);
   while(!Serial);
 
   Bridge.begin();
@@ -56,10 +55,10 @@ void loop()
     // who to send the email to
     SendEmailChoreo.addInput("ToAddress", TO_EMAIL_ADDRESS);
     // then a subject line
-    SendEmailChoreo.addInput("Subject", "Power to sump pump is off!");
+    SendEmailChoreo.addInput("Subject", "Test email");
 
      // next comes the message body, the main content of the email   
-    SendEmailChoreo.addInput("MessageBody", "The power to the sump pump is off!");
+    SendEmailChoreo.addInput("MessageBody", "This is a test email\nsent from my Arduino Yun\n\n--karlduino\n");
 
     // tell the Choreo to run and wait for the results. The 
     // return code (returnCode) will tell us whether the Temboo client 

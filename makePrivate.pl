@@ -3,7 +3,7 @@
 
 $origfile = "TembooAccount.h";
 $tmpfile = "tmp";
-$insertion = "private.h";
+$insertion = "Headers/private.h";
 
 if(-e $tmpfile) { die("tmp file already exists"); }
 system("mv $origfile $tmpfile");
